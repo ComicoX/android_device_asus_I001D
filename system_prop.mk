@@ -62,7 +62,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=10 \
     persist.vendor.dpmhalservice.loglevel=0 \
-    persist.vendor.dpm.loglevel=0
+    persist.vendor.dpm.loglevel=0 \
+    ro.netflix.bsp_rev=Q855-16947-1
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
