@@ -24,9 +24,9 @@ VENDOR=asus
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-LINEAGE_ROOT="${MY_DIR}"/../../..
+havoc_ROOT="${MY_DIR}"/../../..
 
-HELPER="${LINEAGE_ROOT}/vendor/lineage/build/tools/extract_utils.sh"
+HELPER="${havoc_ROOT}/vendor/havoc/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -60,18 +60,18 @@ if [ -z "${SRC}" ]; then
 fi
 
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${havoc_ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
 # Fix proprietary blobs
 patchelf --remove-needed android.hidl.base@1.0.so \
-        "${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/lib/libfm-hci.so"
+        "${havoc_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/lib/libfm-hci.so"
 patchelf --remove-needed android.hidl.base@1.0.so \
-        "${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/lib64/libfm-hci.so"
+        "${havoc_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/lib64/libfm-hci.so"
 
 sed -i 's/<library name="android.hidl.manager-V1.0-java"/<library name="android.hidl.manager@1.0-java"/g' \
-        "${LINEAGE_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/etc/permissions/qti_libpermissions.xml"
+        "${havoc_ROOT}/vendor/${VENDOR}/${DEVICE}/proprietary/etc/permissions/qti_libpermissions.xml"
 
 "${MY_DIR}/setup-makefiles.sh"
