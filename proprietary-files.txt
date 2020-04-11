@@ -32,7 +32,6 @@ priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so
 product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 product/lib64/libQTEEConnector_system.so
 product/lib64/libseccam.so
-product/lib64/vendor.display.postproc@1.0.so
 product/lib64/vendor.qti.hardware.cvp@1.0.so
 product/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
 product/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
@@ -50,7 +49,6 @@ lib64/libarcsoft_nighthawk.so
 lib64/libarcsoft_piczoom.so
 product/lib/libQTEEConnector_system.so
 product/lib/libseccam.so
-product/lib/vendor.display.postproc@1.0.so
 product/lib/vendor.qti.hardware.cvp@1.0.so
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so
 product/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
