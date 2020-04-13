@@ -98,7 +98,10 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    FrameRateTile
+    FrameRateTile \
+    libdisplayconfig \
+    libvulkan \
+    vendor.display.config@1.7
 
 # Lights
 PRODUCT_PACKAGES += \
