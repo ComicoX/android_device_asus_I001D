@@ -100,8 +100,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameRateTile \
     libdisplayconfig \
+	libqdMetaData \	
+    libqdMetaData.system \
     libvulkan \
-    vendor.display.config@1.7
+    vendor.display.config@1.5
 
 # Lights
 PRODUCT_PACKAGES += \
