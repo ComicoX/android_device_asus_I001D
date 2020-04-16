@@ -105,6 +105,13 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.5
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.asus_msmnile

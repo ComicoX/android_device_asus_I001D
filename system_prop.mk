@@ -70,7 +70,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
     debug.sf.latch_unsignaled=1 \
     ro.asus.hdr=1 \
-    ro.asus.wcg=1
+    ro.asus.wcg=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \

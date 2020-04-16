@@ -33,6 +33,17 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
+function blob_fixup() {
+    case "${1}" in
+    lib/libwfdnative.so)
+        sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+        ;;
+    lib64/libwfdnative.so)
+        sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+        ;;
+    esac
+}
+
 SECTION=
 KANG=
 
