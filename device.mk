@@ -113,6 +113,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/asus/I001D/prebuilt/system,system)
 
+# Doze
+PRODUCT_PACKAGES += \
+    AsusDoze
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.asus_msmnile
