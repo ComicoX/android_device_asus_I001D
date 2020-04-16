@@ -1,2 +1,5 @@
 # allow system server to get vendor_camera_prop
 get_prop(system_server, vendor_camera_prop)
+
+# Smart_charging
+allow system_server sysfs_battery_supply:file rw_file_perms;
