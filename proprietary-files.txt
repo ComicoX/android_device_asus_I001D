@@ -247,6 +247,7 @@ lib/libwfdmmsink.so
 lib/libwfdrtsp.so
 lib/libwfdservice.so
 lib/libwfdsm.so
+lib/libwfdsinksm.so
 lib/libwfduibcinterface.so
 lib/libwfduibcsink.so
 lib/libwfduibcsinkinterface.so
