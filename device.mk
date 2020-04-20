@@ -100,7 +100,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameRateTile \
     libdisplayconfig \
-	libqdMetaData \	
+    libqdMetaData \
     libqdMetaData.system \
     libvulkan \
     vendor.display.config@1.5
