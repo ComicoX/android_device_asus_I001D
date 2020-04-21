@@ -100,10 +100,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameRateTile \
     libdisplayconfig \
+    libdisplayconfig.vendor \
     libqdMetaData \
     libqdMetaData.system \
     libvulkan \
-    vendor.display.config@1.5
+    vendor.display.config@1.0 \
+    vendor.display.config@1.7
 
 # WiFi Display
 PRODUCT_PACKAGES += \
