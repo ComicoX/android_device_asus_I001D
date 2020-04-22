@@ -113,6 +113,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.data_con_rprt=1 \
 	persist.radio.calls.on.ims=1
 
+# Vibrator
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.asus.scale_low_max_amp=100 \
+    ro.asus.scale_none_max_amp=200
+
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.maintainer=Comico 
