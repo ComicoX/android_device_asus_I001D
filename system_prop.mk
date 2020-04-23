@@ -17,7 +17,9 @@
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=25 \
-    ro.config.vc_call_vol_steps=7
+    ro.config.vc_call_vol_steps=7 \
+    ro.audio.vibra.ring.vol.idx=5 \
+    use.voice.path.for.pcm.voip=true
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -80,7 +82,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.overlay.izat.optin=rro
+    persist.vendor.overlay.izat.optin=rro \
+    sys.qca1530=detect
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
