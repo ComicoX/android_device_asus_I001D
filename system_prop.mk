@@ -113,6 +113,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.data_con_rprt=1 \
 	persist.radio.calls.on.ims=1
 
+# LKMD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lmk.use_minfree_levels=true \
+    ro.lmk.use_psi=false \
+    ro.lmk.low=1001 \
+    ro.lmk.medium=800 \
+    ro.lmk.critical=200 \
+    ro.lmk.kill_heaviest_task=true \
+    ro.lmk.upgrade_pressure=100 \
+    ro.lmk.downgrade_pressure=100
+
 # Vibrator
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.asus.scale_low_max_amp=100 \
