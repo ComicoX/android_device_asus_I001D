@@ -152,6 +152,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.asus.scale_low_max_amp=100 \
     ro.asus.scale_none_max_amp=200
 
+#Simulate sdcard on /data/media
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.fuse_sdcard=true
+
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.maintainer=Comico 
