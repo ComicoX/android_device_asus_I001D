@@ -96,6 +96,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.asus.fp.wakeup=true
 
+# system prop for opengles version
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version=196610
+    
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.overlay.izat.optin=rro \
