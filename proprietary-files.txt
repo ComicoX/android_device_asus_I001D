@@ -4,9 +4,26 @@
 product/lib/com.qualcomm.qti.ant@1.0.so
 product/lib64/com.qualcomm.qti.ant@1.0.so
 
+# Audio
+etc/cdma_call_conf.xml
+lib/libadsprpc_system.so
+lib/libcdsprpc_system.so
+lib/libmdsprpc_system.so
+lib/libsdsprpc_system.so
+lib64/libadsprpc_system.so
+lib64/libcdsprpc_system.so
+lib64/libmdsprpc_system.so
+lib64/libsdsprpc_system.so
+
 # Bluetooth (aptX)
 -app/aptxals/aptxals.apk
 -app/aptxalsOverlay/aptxalsOverlay.apk
+etc/bluetooth/bt_profile.conf
+etc/bluetooth/interop_database.conf
+etc/permissions/audiosphere.xml
+-framework/audiosphere.jar
+lib/libbluetooth_qti.so
+lib64/libbluetooth_qti.so
 product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 

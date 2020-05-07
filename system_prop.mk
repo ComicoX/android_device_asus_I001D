@@ -21,6 +21,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.audio.vibra.ring.vol.idx=5 \
     use.voice.path.for.pcm.voip=true
 
+#Enable offload audio video playback by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    av.offload.enable=true
+
+#enable offload audio video playback by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.offload.video=true
+#
+##enable music through deep buffer
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.deep_buffer.media=true
+#
+##set AudioFlinger client heap size
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.af.client_heap_size_kbyte=7168
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.bluetooth.showdeviceswithoutnames=true \
