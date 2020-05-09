@@ -156,6 +156,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.fuse_sdcard=true
 
+# Camera Watermark fix
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.device=
+
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.maintainer=Comico 
