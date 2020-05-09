@@ -6,6 +6,9 @@
 /voucher(/.*)?		u:object_r:voucher_file:s0
 /xrom(/.*)?		u:object_r:xrom_file:s0
 
+# FPS Info
+/sys/devices/virtual/graphics/fb0/measured_fps           u:object_r:sysfs_fps:s0
+
 # HALs
 /system/bin/hw/lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.asus_msmnile	u:object_r:hal_fod_asus_msmnile_exec:s0
 /system/bin/hw/lineage\.touch@1\.0-service\.asus_msmnile	u:object_r:hal_lineage_touch_asus_msmnile_exec:s0
