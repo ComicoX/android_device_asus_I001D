@@ -158,8 +158,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera Watermark fix
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.product.device=
-
+    ro.product.device="" \
+    ro.product.system.device=ASUS_I001_1
+    
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.maintainer=Comico 
