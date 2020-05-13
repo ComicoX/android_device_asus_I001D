@@ -128,9 +128,7 @@ PRODUCT_PACKAGES += \
 # Prebuilt
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/asus/I001D/prebuilt/system,system) \
-    $(call find-copy-subdir-files,*,device/asus/I001D/prebuilt/root,root) \
-    $(call find-copy-subdir-files,*,device/asus/I001D/prebuilt/lib,lib) \
-    $(call find-copy-subdir-files,*,device/asus/I001D/prebuilt/lib64,lib64)
+    $(call find-copy-subdir-files,*,device/asus/I001D/prebuilt/root,root)
 
 # Doze
 PRODUCT_PACKAGES += \
