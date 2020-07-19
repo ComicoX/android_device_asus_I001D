@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+               (C) 2017-2020 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:height="24dp" android:width="24dp" android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#00000000"
+        android:pathData="M0,0L0,108L108,108L108,0L0,0z" android:strokeColor="#00000000"/>
+    <path android:fillColor="#ffffff"
+        android:pathData="M54,21L53.5,22.5L53.167,23.056L52.722,24.056L52.167,25L51.611,26L50.389,28L49.25,30L48.75,31L47.611,33L46.389,35L45.25,37L44.75,38L43.611,40L42.389,42L41.25,44L40.75,45L39.611,47L38.389,49L37.25,51L36.75,52L35.611,54L34.389,56L33.25,58L32.75,59L31.611,61L30.389,63L29.25,65L28.778,66L27.75,68L26.611,70L25.389,72L24.25,74L23.75,75L22.611,77L22,78L20.917,79.944L20.278,81.5L20,83L36,83L36.5,81.5L36.833,80.944L37.25,79.944L38.25,78L38.833,77L39.389,76L40.583,74.056L41.111,73.056L41.472,72.5L42,71L67,71L67.028,73.056L67.083,74.056L67.389,76L67.611,77L67.917,79L67.972,79.944L68,80.944L68,83L84,83L83.917,80.944L83.611,79L83.389,78L83.056,76L82.944,75L82.611,73L82.389,72L82.056,70L81.944,69L81.611,67L81.222,65L80.944,63L80.611,61L80.389,60L80.056,58L79.944,57L79.611,55L79.389,54L79.056,52L78.944,51L78.611,49L78.389,48L78.056,46L77.944,45L77.611,43L77.389,42L77.056,40L76.944,39L76.611,37L76.389,36L76.194,35L75.806,33L75.611,32L75.389,31L75.056,29L74.778,27L74.389,25L74.083,23.056L74,21L54,21z" android:strokeColor="#00000000"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M61,36L60,37.5L59.778,38.056L59.194,39.056L58.75,40L57.611,42L56.389,44L55.25,46L54.222,48L53.778,49L53.222,50L52.75,51L52.167,52L51.611,53L50.389,55L49.278,56.944L48.833,57.944L48.5,58.5L48,60L65,60L65,57.944L64.972,56.944L64.917,56L64.611,54L64.222,52L64.083,51L63.917,49L63.778,48L63.611,47L63.222,45L63.083,44L62.917,42L62.611,40L62.167,38.111L61.833,37.306L61.75,36.778L61,36z" android:strokeColor="#00000000"/>
+</vector>

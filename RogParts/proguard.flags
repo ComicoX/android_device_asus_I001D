@@ -1,0 +1,3 @@
+-keep class com.havoc.settings.rogparts.doze.* {
+  *;
+}

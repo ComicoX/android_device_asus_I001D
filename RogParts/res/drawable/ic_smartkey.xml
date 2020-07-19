@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2016 The CyanogenMod Project
+              (C) 2017-2020 The LineageOS Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector android:height="12.538775dp" android:viewportHeight="512"
+    android:viewportWidth="980" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="?android:attr/colorControlNormal"
+        android:pathData="M234,1.424C189.891,7.216 145.788,20.182 109,46.428C73.876,71.485 44.073,106.142 25.258,145C-13.887,225.848 -6.625,324.515 43.745,399C60.776,424.184 83.297,446.767 108,464.421C132.56,481.972 161.706,495.514 191,502.873C223.577,511.058 256.679,513.206 290,508.718C326.355,503.82 363.411,490.263 394,469.996C423.134,450.694 450.339,424.451 469.308,395C519.134,317.642 523.56,214.92 479.691,134C462.521,102.327 437.237,74.443 409,52.211C384.478,32.903 354.901,19.371 325,10.86C296.627,2.783 263.503,-2.449 234,1.424z" android:strokeColor="#00000000"/>
+    <path android:fillColor="?android:attr/colorControlNormal"
+        android:pathData="M491,80C493.64,89.165 499.348,97.604 503.781,106C505.51,109.276 507.524,114.802 510.637,116.972C513.097,118.686 517.174,118 520,118L541,118L621,118C665.681,118 710.28,119 755,119C770.384,119 785.681,119.61 801,119.985C813.826,120.3 826.462,119.812 839,123.155C896.482,138.483 939.362,191.642 941.961,251C944.711,313.815 899.338,372.756 839,388.845C825.056,392.563 810.302,391.834 796,392.004C783.029,392.158 770.038,393 757,393L617,393L541,393L521,393C518.045,393 514.011,392.357 511.39,394.028C508.334,395.977 506.563,400.929 504.861,404C499.95,412.86 493.814,422.233 491,432L739,432L801,432C813.868,432 827.271,432.797 840,430.674C857.311,427.788 875.822,418.611 891,410.138C906.504,401.483 919.538,389.482 932,377C955.028,353.935 973.466,322.607 978.561,290C980.415,278.137 980,265.975 980,254C980,226.305 975.729,200.868 962.68,176C941.351,135.355 904.644,104.507 862,88.425C854.384,85.553 845.978,81.965 838,80.379C827.057,78.204 814.15,80 803,80L733,80C688.007,80 642.907,79.072 598,79C562.273,78.943 526.712,80 491,80z" android:strokeColor="#00000000"/>
+</vector>
