@@ -17,25 +17,7 @@
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_steps=25 \
-    ro.config.vc_call_vol_steps=7 \
-    ro.audio.vibra.ring.vol.idx=5 \
-    use.voice.path.for.pcm.voip=true
-
-#Enable offload audio video playback by default
-PRODUCT_PROPERTY_OVERRIDES += \
-    av.offload.enable=true
-
-#enable offload audio video playback by default
-PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.video=true
-#
-##enable music through deep buffer
-PRODUCT_PROPERTY_OVERRIDES += \
-    audio.deep_buffer.media=true
-#
-##set AudioFlinger client heap size
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.af.client_heap_size_kbyte=7168
+    ro.config.vc_call_vol_steps=7
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -96,14 +78,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.asus.fp.wakeup=true
 
-# system prop for opengles version
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196610
-    
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.overlay.izat.optin=rro \
-    sys.qca1530=detect
+    persist.vendor.overlay.izat.optin=rro
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -151,10 +128,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.asus.scale_low_max_amp=100 \
     ro.asus.scale_none_max_amp=200
-
-#Simulate sdcard on /data/media
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.fuse_sdcard=true
 
 # Camera Watermark fix
 PRODUCT_PROPERTY_OVERRIDES += \

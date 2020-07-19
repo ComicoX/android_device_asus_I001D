@@ -62,6 +62,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno640
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
+# SurfaceFlinger
+TARGET_USE_QCOM_SURFACEFLINGER := true
+
 # Treble
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 BOARD_VNDK_VERSION := current
@@ -74,7 +77,8 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+QCOM_BT_USE_BTNV := true
 
 # Dex
 ifeq ($(HOST_OS),linux)
@@ -85,7 +89,6 @@ endif
 
 # Display
 TARGET_USES_HWC2 := true
-TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := (1 << 21) | (1 << 27)
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -96,6 +99,9 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 # FM
 BOARD_HAS_QCA_FM_SOC := "cherokee"
 BOARD_HAVE_QCOM_FM := true
+
+# OTA
+TARGET_OTA_ASSERT_DEVICE := I001, WW_I001, WW_I001D, I001D
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
@@ -149,6 +155,3 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
-
-# Inherit from the proprietary version
--include vendor/asus/I001D/BoardConfigVendor.mk

@@ -2,5 +2,9 @@
   {
     "repository": "android_kernel_asus_I001",
     "target_path": "kernel/asus/I001"
+  },
+  {
+    "repository": "android_vendor_asus",
+    "target_path": "vendor/asus"
   }
 ]

@@ -27,6 +27,7 @@ $(call inherit-product-if-exists, vendor/asus/I001D/I001D-vendor.mk)
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -47,10 +48,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
-# Lineage Permissions
-PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
-
 # A/B
 AB_OTA_UPDATER := true
 
@@ -65,9 +62,6 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
-
-PRODUCT_PACKAGES += \
-    otapreopt_script
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -91,6 +85,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# Touch
+PRODUCT_PACKAGES += \
+    lineage.touch@1.0-service.asus_msmnile
+    
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
@@ -98,21 +96,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.graphics.mapper@2.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    FrameRateTile \
-    libdisplayconfig \
-    libdisplayconfig.vendor \
-    libqdMetaData \
-    libqdMetaData.system \
-    libvulkan \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.allocator@1.0-service \
-    vendor.qti.hardware.display.allocator@1.0.vendor \
-    vendor.qti.hardware.display.mapper@1.0.vendor \
-    vendor.display.config@1.0
+    libvulkan
 
 # WiFi Display
 PRODUCT_PACKAGES += \
@@ -127,12 +111,7 @@ PRODUCT_PACKAGES += \
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,device/asus/I001D/prebuilt/system,system) \
-    $(call find-copy-subdir-files,*,device/asus/I001D/prebuilt/root,root)
-
-# Doze
-PRODUCT_PACKAGES += \
-    AsusDoze
+    $(call find-copy-subdir-files,*,device/asus/I01WD/prebuilt/system,system)
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -178,13 +157,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service.asus_msmnile
 
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -199,16 +178,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# Touch
-PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.asus_msmnile
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    lineage.trust@1.0-service
-
 # Update engine
 PRODUCT_PACKAGES += \
+    otapreopt_script \
     update_engine \
     update_engine_sideload \
     update_verifier
